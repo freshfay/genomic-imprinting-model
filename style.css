@@ -50,4 +50,6 @@ span {
 
 canvas {
     margin-top: 30px;
+    width: 100% !important;
+    height: 400px !important;
 }
