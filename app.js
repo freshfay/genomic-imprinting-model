@@ -57,3 +57,18 @@ function simulate() {
         }
     });
 }
+
+
+// Mostrar valores en tiempo real
+const rSlider = document.getElementById("r");
+const KSlider = document.getElementById("K");
+const sSlider = document.getElementById("s");
+
+const rVal = document.getElementById("r_val");
+const KVal = document.getElementById("K_val");
+const sVal = document.getElementById("s_val");
+
+// actualizar valores al mover
+rSlider.oninput = () => rVal.textContent = rSlider.value;
+KSlider.oninput = () => KVal.textContent = KSlider.value;
+sSlider.oninput = () => sVal.textContent = sSlider.value;
